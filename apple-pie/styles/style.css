@@ -5,11 +5,22 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -17,8 +28,80 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  Set the font */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "emoji"
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+.titulo {
+  background-image: url(../images/apple-pie.jpg);
+  background-position: 50% 41%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 100%;
+  color: white;
+  margin: auto;
+  margin: 0% 5%;
+
+}
+
+.cajagrande {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding: 20% 10%;
+  font-size: 500%;
+  margin-left: 22%;
+}
+
+.texto-titulo {
+  font-size: 121%;
+  width: 54%;
+  margin-left: 27%;
+  margin-top: 3%;
+
+}
+
+.Ingredients {
+  border-color: rgba(0, 0, 0, 0.158);
+  border-style: solid;
+  border-width: 3px 0px;
+  margin-left: 1%;
+}
+.lista-ingredientes{
+
+margin-left: 2%;
+}
+.img {
+  width: 40vw;
+  margin-left: 30%;
+  padding: 19px;
+}
+
+ol {
+  /* 1. Remove the default list style */
+  list-style: none;
+}
+
+ol>li {
+  /* 2. Create a custom list counter */
+  counter-increment: listcounter;
+}
+
+ol>li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ")";
+}
+
+.div {
+  margin: 0% 5%;
+  padding: 3% 0%;
+}
+
+h2 {
+  padding: 0 0 15px 0;
+}
